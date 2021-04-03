@@ -1,24 +1,9 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { withTranslation } from "react-i18next";
+import React from 'react'
 
-export class Home extends Component<any> {
-  changeLanguage = (lng: string) => {
-    this.props.i18n.changeLanguage(lng);
-  };
-  render() {
-    return (
-      <div>
-        {" "}
-        {this.props.t("welcome")}
-        <button onClick={() => this.changeLanguage("tr")}>Change</button>
-      </div>
-    );
-  }
+export default function Home(props:any) {
+  return (
+    <div>
+        <img style={{borderRadius:5}} src="http://placehold.it/1400x700" alt="img"/>
+    </div>
+  )
 }
-
-const mapStateToProps = (state: any) => {
-  return state;
-};
-
-export default connect(mapStateToProps)(withTranslation()(Home));

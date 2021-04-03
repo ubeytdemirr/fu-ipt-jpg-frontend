@@ -1,7 +1,7 @@
 import MainLayout from "../layouts/main/MainLayout";
 import Home from "../pages/Home/Home";
 
-export default [
+const routes = [
   {
     title: "Home",
     description: "",
@@ -10,4 +10,5 @@ export default [
     component: Home,
     exact: true,
   },
-];
+]
+export default routes;
